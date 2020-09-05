@@ -2,7 +2,7 @@
   <v-app>
     <Layout/>
     <v-main>
-      <v-container fluid>
+      <v-container>
         <GridCertified/>
         <!-- If using vue-router -->
         <!-- <router-view></router-view> -->

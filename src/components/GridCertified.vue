@@ -1,6 +1,6 @@
 <template>
   <v-card
-    max-width="600"
+    max-width="700"
     class="mx-auto mt-6"
   >
     <v-row dense>
@@ -14,31 +14,14 @@
             :src="card.src"
             class="white--text align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-            height="200px"
+            height="250px"
           >
             <v-card-title v-text="card.title"></v-card-title>
           </v-img>
 
           <v-card-actions>
-            <v-btn outlined small color="primary">Abrir</v-btn>
             <v-spacer></v-spacer>
-            <v-tooltip left>
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn icon v-bind="attrs" v-on="on">
-                  <v-icon color="red">mdi-thumb-up</v-icon>
-                </v-btn>
-              </template>
-              <span>Curtir</span>
-            </v-tooltip>
-
-            <v-tooltip right>
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn icon v-bind="attrs" v-on="on">
-                  <v-icon color="blue">mdi-share-variant</v-icon>
-                </v-btn>
-              </template>
-              <span>Compartilhar</span>
-            </v-tooltip>
+            <v-btn outlined small color="primary" @click="openCertified(card.src)">Abrir</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -50,14 +33,23 @@
 export default {
   data: () => ({
     cards: [
-      { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg' },
-      { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg' },
-      { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg' },
+      { title: 'PHP 7 - Certificado', src: 'https://udemy-certificate.s3.amazonaws.com/image/UC-e7a429bc-2bc8-4398-87d4-bd575f311cc8.jpg' },
+      { title: 'SCRUM - Certificado', src: 'https://udemy-certificate.s3.amazonaws.com/image/UC-17fb95f7-a47a-45f5-9308-5ae3f1393172.jpg' },
+      { title: 'Docker - Certificado', src: 'https://udemy-certificate.s3.amazonaws.com/image/UC-b7e12324-eba9-464d-a8f0-7e97b16fb743.jpg' },
+      { title: 'Python - Certificado', src: 'https://udemy-certificate.s3.amazonaws.com/image/UC-3ZEUTW19.jpg' },
     ],
   }),
+
   mounted () {
     console.log(this.$vuetify.breakpoint.name)
   },
+
+  methods: {
+    openCertified (url) {
+      window.open(url)
+    }
+  },
+
   computed: {
     /* eslint-disable */
     imageViewPort () {
