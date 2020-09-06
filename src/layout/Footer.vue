@@ -18,7 +18,7 @@
           class="lighten-1 white--text text-center"
         >
           <v-card-text>
-            <v-tooltip left>
+            <v-tooltip top>
               <template v-slot:activator="{ on, attrs }">
                 <v-btn
                   v-for="icon in icons"
