@@ -57,10 +57,6 @@ export default {
     ],
   }),
 
-  mounted () {
-    console.log(this.$vuetify.breakpoint.name)
-  },
-
   methods: {
     openExternLink (url) {
       let win = window.open()

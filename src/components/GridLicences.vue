@@ -12,7 +12,7 @@
       >
         <v-card>
           <v-img
-            :src="card.src"
+            src="../assets/scrum-certified.png"
             class="white--text align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="250px"
@@ -44,14 +44,12 @@ export default {
   name: 'GridLicencas',
   data: () => ({
     cards: [
-      { title: 'Teste 1 - (73,5 horas)', src: 'https://udemy-certificate.s3.amazonaws.com/image/UC-e7a429bc-2bc8-4398-87d4-bd575f311cc8.jpg' },
-      { title: 'Teste 2 - (25 horas)', src: 'https://alunos.b7web.com.br/media/certificates/certificado_8691.jpg' },
+      { 
+        title: 'SFC - (Scrum Fundamentals Certified)',
+        src: 'https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-Rom%C3%A1rioRodriguesArruda-781122.pdf'
+      },
     ],
   }),
-
-  mounted () {
-    console.log(this.$vuetify.breakpoint.name)
-  },
 
   methods: {
     openExternLink (url) {
