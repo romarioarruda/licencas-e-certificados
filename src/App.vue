@@ -20,10 +20,6 @@ export default {
   components: {
     Layout,
     GridCertified
-  },
-
-  data: () => ({
-    drawer: false,
-  }),
-};
+  }
+}
 </script>
