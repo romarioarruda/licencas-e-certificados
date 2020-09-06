@@ -17,12 +17,21 @@
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="250px"
           >
+            <template v-slot:placeholder>
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
             <v-card-title v-text="card.title"></v-card-title>
           </v-img>
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn outlined small color="primary" @click="openCertified(card.src)">Abrir</v-btn>
+            <v-btn outlined small color="primary" @click="openExternLink(card.src)">Abrir</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -52,7 +61,7 @@ export default {
   },
 
   methods: {
-    openCertified (url) {
+    openExternLink (url) {
       let win = window.open()
           win.opener = null
           win.location = url
