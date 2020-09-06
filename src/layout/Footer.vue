@@ -50,6 +50,7 @@
 
 <script>
   export default {
+    name: 'Footer',
     data: () => ({
       icons: [
         { icon: 'mdi-linkedin', src: 'https://www.linkedin.com/in/romário-arruda/' },

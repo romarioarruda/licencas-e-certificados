@@ -41,6 +41,7 @@
 
 <script>
 export default {
+  name: 'GridLicencas',
   data: () => ({
     cards: [
       { title: 'Teste 1 - (73,5 horas)', src: 'https://udemy-certificate.s3.amazonaws.com/image/UC-e7a429bc-2bc8-4398-87d4-bd575f311cc8.jpg' },

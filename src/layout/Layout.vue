@@ -47,6 +47,7 @@
 
 <script>
   export default {
+    name: 'layoutmain',
     data: () => ({
       drawer: false,
     }),
