@@ -30,12 +30,12 @@
               <v-list-item-title>Home</v-list-item-title>
             </v-list-item>
           </router-link>
-          <router-link to="/teste">
+          <router-link to="/tecnologias">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-account</v-icon>
+                <v-icon>mdi-wrench</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Desenvolvedor</v-list-item-title>
+              <v-list-item-title>Tecnologias</v-list-item-title>
             </v-list-item>
           </router-link>
         </v-list-item-group>

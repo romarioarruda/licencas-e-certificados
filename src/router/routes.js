@@ -2,6 +2,10 @@ const routes = [
   {
     path: '/',
     component: () => import('../pages/Index.vue')
+  },
+  {
+    path: '/tecnologias',
+    component: () => import('../pages/Tecnology.vue')
   }
 ]
 
