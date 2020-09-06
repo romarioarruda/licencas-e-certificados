@@ -2,6 +2,7 @@
   <div>
     <v-app-bar
       color="deep-purple"
+      class="lighten-1"
       dark
     >
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
